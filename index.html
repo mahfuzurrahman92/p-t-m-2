@@ -45,38 +45,27 @@
             border-radius: 5px ;
             display: grid;
             gap: 3px;
-            /* grid-template-columns: repeat(2, 1fr); */
-            grid-template-columns: 50% 50% ;
+            grid-template-columns: repeat(3, 1fr);
+            
             
             
             
         }
-        /* .con1{
-            /* height:100%; */
+    
         
-        .con2{
-            gap: 3px;
-            display: grid;
-            grid-template-rows: repeat(2,1fr);
-            grid-template-rows: 50% 25% 25%;
-        }
-        .con3{
-            display: grid;
-            grid-template-columns: 50% 50%;
-            height: 125px;
-            gap: 3px;
-        } 
         
         .grid-1{
             border-radius: 3px;
-            height: 100%;
+            
          background-color: red;
          color: white;
+         grid-row: span 2;
         }
         .grid-2{
             border-radius: 3px;
             color: white;
           background-color: orange;
+          grid-column: span 2;
         }
         .grid-3{
             border-radius: 3px;
@@ -154,14 +143,10 @@
                 grid-template-columns: repeat(1,1fr);
             }
             .container-2{
+                display: grid;
                 grid-template-columns: repeat(1,1fr);
             }
-            .con2{
-                grid-template-columns: repeat(1,1fr);
-            }
-            .con3{
-                grid-template-columns: repeat(1,1fr);
-            }
+            
             .div-1{
                 flex-direction: column;
             }
@@ -191,18 +176,12 @@
         <div class="right">Right</div>
     </div>
     <h3>Task-2:Grid Layout</h3>
-    <div class="container-2">
-       <div class="con1">
-        <div class="grid-1">1</div>
-       </div>
-       <div class="con2">
-        <div class="grid-2">2</div>
-        <div class="con3">
-            <div class="grid-3">3</div>
-       <div class="grid-4">4</div>
-        </div>
-       </div>
-    </div>
+   <div class="container-2">
+    <div class="grid-1">1</div>
+    <div class="grid-2">2</div>
+    <div class="grid-3">3</div>
+    <div class="grid-4">4</div>
+   </div>
 
         <h3>Task -3:Design Responsive -II </h3>
     <div class="container-3">
