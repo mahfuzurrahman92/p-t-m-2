@@ -125,10 +125,28 @@
         /* container-4 */
         .container-4{
             display: flex;
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
+            flex-direction: column;
+            
             row-gap: 10px;
             column-gap: 10px;
+        }
+        .con-4-1{
+            padding: 5px;
+            
+            display: flex;
+            
+        }
+        .con-4-2{
+            padding: 5px;
+            display: flex;
+            
+             
+        }
+        .con-4-1 div {
+            margin: 10px;
+        }
+        .con-4-2 div {
+            margin: 10px;
         }
         @media screen and(max-width:576px) {
             .container-1{
@@ -152,10 +170,13 @@
             .container-3{
                 grid-template-columns: repeat(1,1fr);
             }
-            .container-4{
-                /* flex-direction: row-reverse; */
-                /* grid-template-columns: repeat(1,1fr); */
+            .con-4-1{
+                flex-direction: column;
                 
+                
+            }
+            .con-4-2{
+                flex-direction: column-reverse;
             }
 
         }
@@ -212,7 +233,8 @@
     </div>
     <h3>Task-4: Design Respnsive layout-I</h3>
     <div class="container-4">
-        <div>
+       <div class="con-4-1">
+         <div>
             <img src="Images/food.jpg" alt="">
         </div>
         <div>
@@ -224,7 +246,9 @@
                  explicabo minima. Quidem at nihil maxime sit tempora distinctio
                  doloribus tempore eum ea autem.</p>
         </div>
-        <div>
+       </div>
+       <div class="con-4-2">
+         <div>
             <h4>Why Do we use it?</h4>
             <p>Lorem ipsum dolor sit 
                 amet consectetur adipisicing 
@@ -236,6 +260,7 @@
         <div>
             <img src="Images/images.jpeg" alt="">
         </div>
+       </div>
         
 
     </div>
