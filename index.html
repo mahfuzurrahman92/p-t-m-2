@@ -11,14 +11,13 @@
         }
         /* Task 1 */
         .container-1{
-            height: 250px;
+            height: 100vh;
             padding: 5px;
             border: 2px solid;
             border-radius: 5px ;
-            display: grid;
+            display: flex;
             gap: 3px;
-            grid-template-columns: repeat(2,1fr);
-            grid-template-columns: 30% 70%;
+            
         }
         .left{
             /* width: 25%; */
@@ -26,6 +25,8 @@
             justify-content: center;
             align-items: center;
             border-radius: 3px;
+            width: 50vh;
+            
 
             background-color: rgb(156, 154, 154);
         }
@@ -35,6 +36,8 @@
             align-items: center;
             border-radius: 3px;
             /* width: 75%; */
+            width: 150vh;
+            
             background-color: aquamarine;
         }
         /*Task -2 */
@@ -148,7 +151,7 @@
         }
         @media screen and(max-width:576px) {
             .container-1{
-                grid-template-columns: repeat(1,1fr);
+                flex-direction: column;
             }
             .container-2{
                 display: grid;
